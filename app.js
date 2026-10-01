@@ -180,3 +180,40 @@ function showToast(message) {
     toast.classList.add('hidden');
   }, 3200);
 }
+
+/* --------------------------------------------------------------------------
+   6. Automatic Multi-Format Image Fallback (Supports .jpg, .jpeg, .png, .JPG)
+   -------------------------------------------------------------------------- */
+function initImageFormatFallback() {
+  const allImages = document.querySelectorAll('img');
+  
+  allImages.forEach(img => {
+    img.addEventListener('error', function() {
+      const currentSrc = this.getAttribute('src');
+      if (!currentSrc) return;
+
+      const fallbackExtensions = ['.jpeg', '.jpg', '.png', '.JPG', '.JPEG', '.webp'];
+      const extensionMatch = currentSrc.match(/\.(jpg|jpeg|png|JPG|JPEG|webp)$/);
+      
+      if (extensionMatch) {
+        const currentExt = extensionMatch[0];
+        const basePath = currentSrc.slice(0, -currentExt.length);
+        const attempted = this.dataset.fallbackAttempt ? parseInt(this.dataset.fallbackAttempt, 10) : 0;
+
+        const nextExts = fallbackExtensions.filter(ext => ext !== currentExt);
+
+        if (attempted < nextExts.length) {
+          this.dataset.fallbackAttempt = attempted + 1;
+          const nextSrc = basePath + nextExts[attempted];
+          this.src = nextSrc;
+        }
+      }
+    });
+  });
+}
+
+// Initialize fallback on DOM ready
+document.addEventListener('DOMContentLoaded', () => {
+  initImageFormatFallback();
+});
+
