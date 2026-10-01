@@ -16,6 +16,21 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Immediate Image Format Resolver (Handles .jpg, .jpeg, .png, .JPG seamlessly) -->
+  <script>
+    function handleImgError(img) {
+      if (!img.dataset.fallbackCount) img.dataset.fallbackCount = "0";
+      var count = parseInt(img.dataset.fallbackCount, 10);
+      var exts = ['.jpeg', '.jpg', '.png', '.JPG', '.JPEG'];
+      var src = img.getAttribute('src');
+      var base = src.replace(/\.(jpg|jpeg|png|JPG|JPEG)$/i, '');
+      if (count < exts.length) {
+        img.dataset.fallbackCount = (count + 1).toString();
+        img.src = base + exts[count];
+      }
+    }
+  </script>
 </head>
 <body>
 
@@ -152,7 +167,7 @@
             <div class="profile-photo-card">
               <div class="photo-frame">
                 <!-- User Upload Asset: assets/khushi_profile.jpg -->
-                <img src="assets/khushi_profile.jpg" alt="Khushi Verma — Design & Social Media Portfolio" class="main-portrait-img" id="hero-profile-img" />
+                <img src="assets/khushi_profile.jpg" alt="Khushi Verma — Design & Social Media Portfolio" class="main-portrait-img" id="hero-profile-img" onerror="handleImgError(this)" />
                 <div class="photo-caption-bar">
                   <span class="caption-name">Khushi Verma</span>
                   <span class="caption-tag">Data Science × Design</span>
@@ -277,7 +292,7 @@
             </div>
 
             <div class="init-image-wrapper">
-              <img src="assets/paryatan_work.jpg" alt="Paryatan Foundation workshop session" class="init-img" />
+              <img src="assets/paryatan_work.jpeg" alt="Paryatan Foundation workshop session" class="init-img" onerror="handleImgError(this)" />
             </div>
 
             <div class="init-body">
@@ -311,7 +326,7 @@
             </div>
 
             <div class="init-image-wrapper">
-              <img src="assets/sahayog_event.jpg" alt="SAHAYOG Event poster and outreach creatives" class="init-img" />
+              <img src="assets/sahayog_event.jpg" alt="SAHAYOG Event poster and outreach creatives" class="init-img" onerror="handleImgError(this)" />
             </div>
 
             <div class="init-body">
@@ -346,7 +361,7 @@
             </div>
 
             <div class="init-image-wrapper">
-              <img src="assets/sih_hackathon.jpg" alt="Smart India Hackathon internal event organization" class="init-img" />
+              <img src="assets/sih_hackathon.JPG" alt="Smart India Hackathon internal event organization" class="init-img" onerror="handleImgError(this)" />
             </div>
 
             <div class="init-body">
@@ -380,7 +395,7 @@
             </div>
 
             <div class="init-image-wrapper">
-              <img src="assets/trent_internship.jpg" alt="Trent IT corporate workplace experience" class="init-img" />
+              <img src="assets/trent_internship.jpg" alt="Trent IT corporate workplace experience" class="init-img" onerror="handleImgError(this)" />
             </div>
 
             <div class="init-body">
@@ -413,7 +428,7 @@
             </div>
 
             <div class="init-image-wrapper">
-              <img src="assets/community_drives.jpg" alt="Community environmental initiatives" class="init-img" />
+              <img src="assets/community_drives.jpeg" alt="Community environmental initiatives" class="init-img" onerror="handleImgError(this)" />
             </div>
 
             <div class="init-body">
