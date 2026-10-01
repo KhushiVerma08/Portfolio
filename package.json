@@ -1,0 +1,17 @@
+{
+  "name": "khushi-verma-portfolio",
+  "version": "1.0.0",
+  "description": "Khushi Verma — Design, Social Media & Storytelling Portfolio",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "social-media",
+    "design",
+    "storytelling",
+    "data-science"
+  ],
+  "author": "Khushi Verma",
+  "license": "ISC"
+}

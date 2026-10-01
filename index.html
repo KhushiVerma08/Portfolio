@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khushi Verma | Design × Social Media × Storytelling</title>
+  
+  <!-- SEO & Metadata -->
+  <meta name="description" content="Khushi Verma — 4th Year B.Tech (Hons) Data Science student at Vidyashilp University Bangalore. Combining technical thinking, Canva design, video editing, event organising, and human-centered social storytelling." />
+  <meta name="author" content="Khushi Verma" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400;1,6..72,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient Glow Backgrounds -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- SITE HEADER & NAVIGATION BUTTONS -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      
+      <button class="brand-logo" onclick="switchSection('home')" aria-label="Go to Home">
+        <span class="logo-mark">KV</span>
+        <div class="logo-text">
+          <span class="logo-name">Khushi Verma</span>
+          <span class="logo-subtitle">Design × Storytelling × Impact</span>
+        </div>
+      </button>
+
+      <!-- Section Navigation Buttons -->
+      <nav class="desktop-nav" id="desktop-nav">
+        <div class="nav-btn-group">
+          <button class="nav-section-btn active" data-target="home" onclick="switchSection('home')">
+            <span class="nav-icon">✦</span>
+            <span>Home</span>
+          </button>
+          <button class="nav-section-btn" data-target="experience" onclick="switchSection('experience')">
+            <span class="nav-icon">📁</span>
+            <span>My Work & Initiatives</span>
+          </button>
+          <button class="nav-section-btn" data-target="strategy" onclick="switchSection('strategy')">
+            <span class="nav-icon">💡</span>
+            <span>Content Strategy</span>
+          </button>
+          <button class="nav-section-btn" data-target="about" onclick="switchSection('about')">
+            <span class="nav-icon">👤</span>
+            <span>About Me</span>
+          </button>
+          <button class="nav-section-btn" data-target="contact" onclick="switchSection('contact')">
+            <span class="nav-icon">✉️</span>
+            <span>Contact</span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-sm btn-primary" onclick="switchSection('contact')">
+          <span>Let’s Connect</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+      <div class="mobile-nav-buttons">
+        <button class="mobile-nav-btn active" data-target="home" onclick="switchSection('home'); closeMobileNav();">
+          <span>✦ Home Overview</span>
+        </button>
+        <button class="mobile-nav-btn" data-target="experience" onclick="switchSection('experience'); closeMobileNav();">
+          <span>📁 My Work & Initiatives</span>
+        </button>
+        <button class="mobile-nav-btn" data-target="strategy" onclick="switchSection('strategy'); closeMobileNav();">
+          <span>💡 Content Strategy & Process</span>
+        </button>
+        <button class="mobile-nav-btn" data-target="about" onclick="switchSection('about'); closeMobileNav();">
+          <span>👤 About Me</span>
+        </button>
+        <button class="mobile-nav-btn" data-target="contact" onclick="switchSection('contact'); closeMobileNav();">
+          <span>✉️ Contact & Connect</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT SECTIONS (VIEW CONTAINER) -->
+  <main class="main-content-wrapper">
+
+    <!-- ==========================================================================
+         SECTION 1: HOME (OVERVIEW & QUICK ACCESS)
+         ========================================================================== -->
+    <section class="page-section active-section" id="section-home">
+      <div class="container">
+        
+        <!-- Hero Banner -->
+        <div class="hero-layout">
+          <div class="hero-left">
+            <h1 class="hero-title">
+              Designing stories that <span class="highlight-serif">make people care.</span>
+            </h1>
+
+            <p class="hero-subheading">
+              <span class="hero-author-name">Khushi Verma</span>
+              <span class="hero-divider">|</span>
+              <span class="hero-skills-tagline">Design × Social Media × Storytelling × Social Impact</span>
+            </p>
+
+            <p class="hero-intro">
+              I’m a 4th-year Data Science student with a minor in Finance, combining analytical clarity with a passion for creative communication, event organising, poster design, and human-to-human connection.
+            </p>
+
+            <div class="hero-actions">
+              <button class="btn btn-lg btn-primary" onclick="switchSection('experience')">
+                <span>Explore My Initiatives</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+              <button class="btn btn-lg btn-outline" onclick="switchSection('about')">
+                <span>About Me</span>
+              </button>
+              <button class="btn btn-lg btn-glass" onclick="switchSection('contact')">
+                <span>Get in Touch</span>
+              </button>
+            </div>
+
+            <div class="hero-badges-row">
+              <div class="pill-badge">🎓 Vidyashilp University, Bangalore</div>
+              <div class="pill-badge">🏔️ Originally from Shimla, HP</div>
+              <div class="pill-badge">🤝 People-First Storyteller</div>
+              <a href="https://canva.link/us5v3g5jomnxk6k" target="_blank" rel="noopener noreferrer" class="pill-badge pill-french">
+                <span>🇫🇷 French Introduction (Canva) ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="profile-photo-card">
+              <div class="photo-frame">
+                <!-- User Upload Asset: assets/khushi_profile.jpg -->
+                <img src="assets/khushi_profile.jpg" alt="Khushi Verma — Design & Social Media Portfolio" class="main-portrait-img" id="hero-profile-img" />
+                <div class="photo-caption-bar">
+                  <span class="caption-name">Khushi Verma</span>
+                  <span class="caption-tag">Data Science × Design</span>
+                </div>
+              </div>
+              <div class="floating-note">
+                <span>Curious about the <em>why</em> behind content ✦</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section Navigation Cards (Direct Section Gateways) -->
+        <div class="gateway-section">
+          <div class="section-kicker">Navigation Gateways</div>
+          <h2 class="gateway-title">Where would you like to explore?</h2>
+          
+          <div class="gateway-grid">
+            
+            <div class="gateway-card" onclick="switchSection('experience')">
+              <div class="gateway-icon">📁</div>
+              <div class="gateway-content">
+                <h3>My Work & Real Initiatives</h3>
+                <p>Paryatan Foundation, SAHAYOG 2026 event organising, SIH Overnight Hackathon, Canva poster creatives, and Trent internship.</p>
+                <span class="gateway-link">Open Section →</span>
+              </div>
+            </div>
+
+            <div class="gateway-card" onclick="switchSection('strategy')">
+              <div class="gateway-icon">💡</div>
+              <div class="gateway-content">
+                <h3>Content Strategy & Process</h3>
+                <p>The 6-step content thinking framework: <em>"A good post starts before the design"</em>, 1-week calendar, and analytics mindset.</p>
+                <span class="gateway-link">Open Section →</span>
+              </div>
+            </div>
+
+            <div class="gateway-card" onclick="switchSection('about')">
+              <div class="gateway-icon">👤</div>
+              <div class="gateway-content">
+                <h3>About Me & Background</h3>
+                <p>Data Science student, Finance minor, Vidyashilp University Bangalore, roots in Shimla, and why I love working with people personally.</p>
+                <span class="gateway-link">Open Section →</span>
+              </div>
+            </div>
+
+            <div class="gateway-card" onclick="switchSection('contact')">
+              <div class="gateway-icon">✉️</div>
+              <div class="gateway-content">
+                <h3>Contact & Direct Connect</h3>
+                <p>Send an instant message via WhatsApp or Email, access LinkedIn, Instagram, phone, and university contacts.</p>
+                <span class="gateway-link">Open Section →</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Why Social Media & Design Section -->
+        <div class="why-story-box">
+          <div class="why-quote-col">
+            <span class="section-kicker">My Philosophy</span>
+            <h3 class="why-heading">Why Social Media & Design?</h3>
+            <blockquote class="why-quote-text">
+              “I’ve realised that I genuinely enjoy the process behind good content—not just making something visually appealing, but thinking about <strong>what it should say</strong>, <strong>who should see it</strong>, and <strong>how it should make them feel</strong>. I want to build purposeful digital storytelling that connects people with meaningful ideas.”
+            </blockquote>
+          </div>
+          <div class="why-pillars-col">
+            <div class="mini-pillar">
+              <span class="mp-num">01</span>
+              <div>
+                <strong>Content as a Bridge:</strong>
+                <p>Translating community initiatives and technology into approachable visual narratives.</p>
+              </div>
+            </div>
+            <div class="mini-pillar">
+              <span class="mp-num">02</span>
+              <div>
+                <strong>Audience Empathy:</strong>
+                <p>Understanding what captures attention and builds genuine trust among youth and communities.</p>
+              </div>
+            </div>
+            <div class="mini-pillar">
+              <span class="mp-num">03</span>
+              <div>
+                <strong>Data + Human Connection:</strong>
+                <p>Combining structured thinking and curiosity with warmth and creative execution.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: MY WORK & INITIATIVES (REAL EXPERIENCES & CANVA DESIGNS)
+         ========================================================================== -->
+    <section class="page-section" id="section-experience">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-kicker">Real-World Projects & Roles</span>
+          <h2 class="section-title">My Work & Initiatives</h2>
+          <p class="section-description">
+            Hands-on experiences organising major student hackathons, community events, NGO workshops, video editing, and digital poster designs.
+          </p>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- Asset Upload Notice for Khushi -->
+        <div class="asset-guide-banner">
+          <span class="guide-icon">📸</span>
+          <div class="guide-text">
+            <strong>Photo Upload Ready:</strong> You can place your real photos and Canva poster exports in the <code>assets/</code> folder using the indicated file names below.
+          </div>
+        </div>
+
+        <div class="initiatives-grid">
+          
+          <!-- INITIATIVE 1: PARYATAN FOUNDATION -->
+          <article class="initiative-card">
+            <div class="init-header">
+              <div class="init-badge-row">
+                <span class="init-tag tag-ngo">Grassroots NGO</span>
+                <span class="init-num">01</span>
+              </div>
+              <h3 class="init-title">Paryatan Foundation</h3>
+              <p class="init-subtitle">Community Workshop Facilitation & Video Editing</p>
+            </div>
+
+            <div class="init-image-wrapper">
+              <!-- Asset Slot: assets/paryatan_work.jpg -->
+              <img src="assets/paryatan_work.jpg" alt="Paryatan Foundation workshop session" class="init-img" />
+              <span class="img-slot-tag">File: assets/paryatan_work.jpg</span>
+            </div>
+
+            <div class="init-body">
+              <p class="init-desc">
+                Worked directly on the ground with children and local communities in social-impact programs. Conducted creative educational activities, handled video documentation, and edited community video reels.
+              </p>
+
+              <div class="init-insights-box">
+                <span class="insight-label">💡 Storytelling Insight:</span>
+                <p>Authentic, candid documentation creates deep emotional trust. Capturing real smiles and learning moments connects audiences far better than staged graphics.</p>
+              </div>
+
+              <div class="init-tags-flex">
+                <span>Video Editing</span>
+                <span>Community Facilitation</span>
+                <span>Child Education</span>
+                <span>Social Impact</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- INITIATIVE 2: ORGANISING SAHAYOG EVENT & CANVA POSTER WORK -->
+          <article class="initiative-card">
+            <div class="init-header">
+              <div class="init-badge-row">
+                <span class="init-tag tag-event">Event Organising & Creative</span>
+                <span class="init-num">02</span>
+              </div>
+              <h3 class="init-title">Organising SAHAYOG Event</h3>
+              <p class="init-subtitle">Student Community Outreach, Canva Posters & Promotion</p>
+            </div>
+
+            <div class="init-image-wrapper">
+              <!-- Asset Slot: assets/sahayog_event.jpg -->
+              <img src="assets/sahayog_event.jpg" alt="SAHAYOG Event poster and outreach creatives" class="init-img" />
+              <span class="img-slot-tag">File: assets/sahayog_event.jpg (Canva Poster)</span>
+            </div>
+
+            <div class="init-body">
+              <p class="init-desc">
+                Key member in organising and promoting <strong>SAHAYOG</strong>, a major community and student collaboration initiative. Designed vibrant Canva posters, social teasers, and countdown creatives to mobilize student participation.
+              </p>
+
+              <div class="init-insights-box">
+                <span class="insight-label">🎨 Canva & Design Insight:</span>
+                <p>Event posters need immediate visual hierarchy. Dates, registration links, and key themes must be scannable in under 2 seconds for active campus feeds.</p>
+              </div>
+
+              <div class="init-tags-flex">
+                <span>Canva Design</span>
+                <span>Poster Creation</span>
+                <span>Event Promotion</span>
+                <span>Student Outreach</span>
+                <span>SAHAYOG 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- INITIATIVE 3: SIH INTERNAL OVERNIGHT HACKATHON -->
+          <article class="initiative-card">
+            <div class="init-header">
+              <div class="init-badge-row">
+                <span class="init-tag tag-tech">Tech Leadership & Hackathon</span>
+                <span class="init-num">03</span>
+              </div>
+              <h3 class="init-title">Smart India Hackathon (SIH) Internal Overnight Hackathon</h3>
+              <p class="init-subtitle">Organising, Event Branding & Overnight Operations</p>
+            </div>
+
+            <div class="init-image-wrapper">
+              <!-- Asset Slot: assets/sih_hackathon.jpg -->
+              <img src="assets/sih_hackathon.jpg" alt="Smart India Hackathon internal event organization" class="init-img" />
+              <span class="img-slot-tag">File: assets/sih_hackathon.jpg</span>
+            </div>
+
+            <div class="init-body">
+              <p class="init-desc">
+                Coordinated and organised the <strong>SIH Internal Overnight Hackathon</strong> on campus. Managed high-energy event branding, live social updates, team communications, participant logistics, and overnight support.
+              </p>
+
+              <div class="init-insights-box">
+                <span class="insight-label">⚡ Fast-Paced Execution:</span>
+                <p>Running an overnight hackathon taught me how to communicate under pressure, maintain participant energy through timely announcements, and document high-stakes moments.</p>
+              </div>
+
+              <div class="init-tags-flex">
+                <span>Overnight Event Ops</span>
+                <span>SIH Hackathon</span>
+                <span>Event Branding</span>
+                <span>Logistics & Coordination</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- INITIATIVE 4: TRENT — IT INTERNSHIP -->
+          <article class="initiative-card">
+            <div class="init-header">
+              <div class="init-badge-row">
+                <span class="init-tag tag-corporate">Corporate Technology</span>
+                <span class="init-num">04</span>
+              </div>
+              <h3 class="init-title">Trent — IT Internship</h3>
+              <p class="init-subtitle">Data Systems & Stakeholder Communication</p>
+            </div>
+
+            <div class="init-image-wrapper">
+              <!-- Asset Slot: assets/trent_internship.jpg -->
+              <img src="assets/trent_internship.jpg" alt="Trent IT corporate workplace experience" class="init-img" />
+              <span class="img-slot-tag">File: assets/trent_internship.jpg</span>
+            </div>
+
+            <div class="init-body">
+              <p class="init-desc">
+                Interned in an enterprise corporate environment, learning how to communicate technical and data projects clearly across diverse stakeholders and structured project workflows.
+              </p>
+
+              <div class="init-insights-box">
+                <span class="insight-label">📊 Professional Clarity:</span>
+                <p>Structured clarity is essential everywhere. Translating data insights into concise visual decks prevents confusion and speeds up collaborative decisions.</p>
+              </div>
+
+              <div class="init-tags-flex">
+                <span>Data Science</span>
+                <span>Stakeholder Presentations</span>
+                <span>Systems Clarity</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- INITIATIVE 5: COMMUNITY & SOCIAL DRIVES -->
+          <article class="initiative-card">
+            <div class="init-header">
+              <div class="init-badge-row">
+                <span class="init-tag tag-ngo">Community & Environment</span>
+                <span class="init-num">05</span>
+              </div>
+              <h3 class="init-title">Community & Social Initiatives</h3>
+              <p class="init-subtitle">Environmental Awareness & On-Ground Documentation</p>
+            </div>
+
+            <div class="init-image-wrapper">
+              <!-- Asset Slot: assets/community_drives.jpg -->
+              <img src="assets/community_drives.jpg" alt="Community environmental initiatives" class="init-img" />
+              <span class="img-slot-tag">File: assets/community_drives.jpg</span>
+            </div>
+
+            <div class="init-body">
+              <p class="init-desc">
+                Actively participated in and documented local environmental and community awareness initiatives, capturing micro-stories and photography of volunteer engagement.
+              </p>
+
+              <div class="init-insights-box">
+                <span class="insight-label">🌱 Human-Centered Focus:</span>
+                <p>When you highlight the dedication of individual volunteers, it empowers others to take action in their own local circles.</p>
+              </div>
+
+              <div class="init-tags-flex">
+                <span>Environmental Awareness</span>
+                <span>Photography</span>
+                <span>Grassroots Action</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: CONTENT STRATEGY & PROCESS
+         ========================================================================== -->
+    <section class="page-section" id="section-strategy">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-kicker">Methodology & Thinking</span>
+          <h2 class="section-title">A good post starts before the design.</h2>
+          <p class="section-description">
+            My step-by-step thinking process for turning community initiatives and ideas into purposeful digital storytelling.
+          </p>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- Interactive 6-Step Stepper -->
+        <div class="process-interactive-wrap">
+          
+          <div class="process-steps-nav" id="process-steps-nav">
+            <button class="step-btn active" data-step="1">
+              <span class="step-num">01</span>
+              <span class="step-title">Understand</span>
+            </button>
+            <button class="step-btn" data-step="2">
+              <span class="step-num">02</span>
+              <span class="step-title">Audience</span>
+            </button>
+            <button class="step-btn" data-step="3">
+              <span class="step-num">03</span>
+              <span class="step-title">Story</span>
+            </button>
+            <button class="step-btn" data-step="4">
+              <span class="step-num">04</span>
+              <span class="step-title">Design</span>
+            </button>
+            <button class="step-btn" data-step="5">
+              <span class="step-num">05</span>
+              <span class="step-title">Publish</span>
+            </button>
+            <button class="step-btn" data-step="6">
+              <span class="step-num">06</span>
+              <span class="step-title">Learn</span>
+            </button>
+          </div>
+
+          <!-- Step Details Card -->
+          <div class="step-details-card" id="step-details-card">
+            
+            <!-- Step 1 -->
+            <div class="step-pane active-pane" data-step="1">
+              <div class="step-pane-header">
+                <span class="step-badge-lg">STEP 01</span>
+                <h3>Understand the Core Message</h3>
+              </div>
+              <p class="step-core-question">“What are we trying to communicate, and why does this matter?”</p>
+              <div class="step-checklist-grid">
+                <div class="check-box-item">
+                  <span class="icon-dot">✦</span>
+                  <p><strong>Define the Objective:</strong> Is it to educate, mobilize participants, recruit, or celebrate a milestone?</p>
+                </div>
+                <div class="check-box-item">
+                  <span class="icon-dot">✦</span>
+                  <p><strong>The Core Takeaway:</strong> What is the single sentence we want people to remember?</p>
+                </div>
+                <div class="check-box-item">
+                  <span class="icon-dot">✦</span>
+                  <p><strong>Dignity & Authenticity:</strong> Does the narrative honor the community and event context?</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step-pane" data-step="2">
+              <div class="step-pane-header">
+                <span class="step-badge-lg">STEP 02</span>
+                <h3>Identify the Target Audience</h3>
+              </div>
+              <p class="step-core-question">“Who needs to see it, and why would they care while scrolling?”</p>
+              <div class="step-checklist-grid">
+                <div class="check-box-item">
+                  <span class="icon-dot">✦</span>
+                  <p><strong>Audience Persona:</strong> College students, volunteers, educators, or community partners?</p>
+                </div>
+                <div class="check-box-item">
+                  <span class="icon-dot">✦</span>
+                  <p><strong>The Hook:</strong> What shared feeling or question will make them stop scrolling?</p>
+                </div>
+                <div class="check-box-item">
+                  <span class="icon-dot">✦</span>
+                  <p><strong>Language Simplicity:</strong> Avoid heavy jargon; use approachable words.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step-pane" data-step="3">
+              <div class="step-pane-header">
+                <span class="step-badge-lg">STEP 03</span>
+                <h3>Structure the Story</h3>
+              </div>
+              <p class="step-core-question">“What is the simplest and strongest way to tell it?”</p>
+              <div class="step-checklist-grid">
+                <div class="check-box-item">
+                  <span class="icon-dot">✦</span>
+                  <p><strong>Carousel Flow:</strong> Strong Hook → The Context/Challenge → Concrete Insights → Call to Action.</p>
+                </div>
+                <div class="check-box-item">
+                  <span class="icon-dot">✦</span>
+                  <p><strong>Human Voices:</strong> Ground abstract topics in real quotes and volunteer stories.</p>
+                </div>
+                <div class="check-box-item">
+                  <span class="icon-dot">✦</span>
+                  <p><strong>Emotional Tone:</strong> Warm, inspiring, and actionable.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="step-pane" data-step="4">
+              <div class="step-pane-header">
+                <span class="step-badge-lg">STEP 04</span>
+                <h3>Design with Visual Hierarchy</h3>
+              </div>
+              <p class="step-core-question">“Create a visual hierarchy that makes the message easy to understand.”</p>
+              <div class="step-checklist-grid">
+                <div class="check-box-item">
+                  <span class="icon-dot">✦</span>
+                  <p><strong>Typography & Contrast:</strong> Clear headlines paired with legible body text.</p>
+                </div>
+                <div class="check-box-item">
+                  <span class="icon-dot">✦</span>
+                  <p><strong>White Space:</strong> Avoid clutter; let each slide focus on one key idea.</p>
+                </div>
+                <div class="check-box-item">
+                  <span class="icon-dot">✦</span>
+                  <p><strong>Canva & Figma Craft:</strong> Consistent color palette, clean alignments, and intentional visual cues.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="step-pane" data-step="5">
+              <div class="step-pane-header">
+                <span class="step-badge-lg">STEP 05</span>
+                <h3>Adapt & Publish Across Platforms</h3>
+              </div>
+              <p class="step-core-question">“Adapt the creative for Instagram, LinkedIn, or Stories.”</p>
+              <div class="step-checklist-grid">
+                <div class="check-box-item">
+                  <span class="icon-dot">✦</span>
+                  <p><strong>Instagram Carousels (4:5):</strong> Multi-slide value guides for saves and shares.</p>
+                </div>
+                <div class="check-box-item">
+                  <span class="icon-dot">✦</span>
+                  <p><strong>Stories (9:16):</strong> Quick interactive polls, event countdowns, and behind-the-scenes clips.</p>
+                </div>
+                <div class="check-box-item">
+                  <span class="icon-dot">✦</span>
+                  <p><strong>LinkedIn:</strong> Professional takeaways, event recaps, and collaboration updates.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="step-pane" data-step="6">
+              <div class="step-pane-header">
+                <span class="step-badge-lg">STEP 06</span>
+                <h3>Learn & Iterate</h3>
+              </div>
+              <p class="step-core-question">“Look at reach, engagement, saves, and audience response.”</p>
+              <div class="step-checklist-grid">
+                <div class="check-box-item">
+                  <span class="icon-dot">✦</span>
+                  <p><strong>Engagement Quality:</strong> Are people saving the post, sharing with friends, or asking questions in comments?</p>
+                </div>
+                <div class="check-box-item">
+                  <span class="icon-dot">✦</span>
+                  <p><strong>Slide Drop-off:</strong> Did readers swipe to the final slide?</p>
+                </div>
+                <div class="check-box-item">
+                  <span class="icon-dot">✦</span>
+                  <p><strong>Refine:</strong> Use audience feedback to make the next campaign even better.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="process-humble-note">
+            <span class="quote-sparkle">✦</span>
+            <span>“I’m still learning—but I’m curious about every step of the process.”</span>
+          </div>
+
+        </div>
+
+        <!-- 1-Week Content Calendar Framework -->
+        <div class="cal-wrapper-box">
+          <div class="section-header-flex">
+            <div>
+              <span class="section-kicker">Strategic Cadence</span>
+              <h3 class="cal-box-title">1-Week Content Calendar Framework</h3>
+              <p class="section-description">A balanced rhythm combining storytelling, educational guides, and community engagement.</p>
+            </div>
+          </div>
+
+          <div class="calendar-grid">
+            <div class="cal-day-card">
+              <div class="cal-day-header">
+                <span class="day-name">Monday</span>
+                <span class="day-pillar-tag tag-story">Impact Story</span>
+              </div>
+              <div class="cal-day-body">
+                <div class="cal-meta-item"><span class="cal-label">Format:</span> <span class="cal-val">4-Slide Carousel</span></div>
+                <div class="cal-meta-item"><span class="cal-label">Platform:</span> <span class="cal-val">Instagram & LinkedIn</span></div>
+                <div class="cal-topic-box">
+                  <span class="topic-label">Focus:</span>
+                  <p>Highlighting a real student or community volunteer journey.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cal-day-card">
+              <div class="cal-day-header">
+                <span class="day-name">Tuesday</span>
+                <span class="day-pillar-tag tag-edu">Educational Carousel</span>
+              </div>
+              <div class="cal-day-body">
+                <div class="cal-meta-item"><span class="cal-label">Format:</span> <span class="cal-val">Bite-Sized Explainer</span></div>
+                <div class="cal-meta-item"><span class="cal-label">Platform:</span> <span class="cal-val">Instagram</span></div>
+                <div class="cal-topic-box">
+                  <span class="topic-label">Focus:</span>
+                  <p>3 practical takeaways or insights on community participation.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cal-day-card">
+              <div class="cal-day-header">
+                <span class="day-name">Wednesday</span>
+                <span class="day-pillar-tag tag-quote">Quote / Voice</span>
+              </div>
+              <div class="cal-day-body">
+                <div class="cal-meta-item"><span class="cal-label">Format:</span> <span class="cal-val">Single Graphic Quote</span></div>
+                <div class="cal-meta-item"><span class="cal-label">Platform:</span> <span class="cal-val">Instagram & Stories</span></div>
+                <div class="cal-topic-box">
+                  <span class="topic-label">Focus:</span>
+                  <p>Inspirational quote directly from on-ground team members.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cal-day-card">
+              <div class="cal-day-header">
+                <span class="day-name">Thursday</span>
+                <span class="day-pillar-tag tag-bts">Behind The Scenes</span>
+              </div>
+              <div class="cal-day-body">
+                <div class="cal-meta-item"><span class="cal-label">Format:</span> <span class="cal-val">Short Video / Story</span></div>
+                <div class="cal-meta-item"><span class="cal-label">Platform:</span> <span class="cal-val">Stories & Reels</span></div>
+                <div class="cal-topic-box">
+                  <span class="topic-label">Focus:</span>
+                  <p>Workshop preparation, team collaboration, and unedited moments.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cal-day-card">
+              <div class="cal-day-header">
+                <span class="day-name">Friday</span>
+                <span class="day-pillar-tag tag-highlight">Project Highlight</span>
+              </div>
+              <div class="cal-day-body">
+                <div class="cal-meta-item"><span class="cal-label">Format:</span> <span class="cal-val">Data Graphic + Post</span></div>
+                <div class="cal-meta-item"><span class="cal-label">Platform:</span> <span class="cal-val">LinkedIn</span></div>
+                <div class="cal-topic-box">
+                  <span class="topic-label">Focus:</span>
+                  <p>Milestones, event achievements, and partner shoutouts.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cal-day-card">
+              <div class="cal-day-header">
+                <span class="day-name">Saturday</span>
+                <span class="day-pillar-tag tag-engage">Engagement Story</span>
+              </div>
+              <div class="cal-day-body">
+                <div class="cal-meta-item"><span class="cal-label">Format:</span> <span class="cal-val">Polls & Question Box</span></div>
+                <div class="cal-meta-item"><span class="cal-label">Platform:</span> <span class="cal-val">Instagram Stories</span></div>
+                <div class="cal-topic-box">
+                  <span class="topic-label">Focus:</span>
+                  <p>Weekend Q&A asking the community what they care about.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cal-day-card">
+              <div class="cal-day-header">
+                <span class="day-name">Sunday</span>
+                <span class="day-pillar-tag tag-reflect">Weekly Reflection</span>
+              </div>
+              <div class="cal-day-body">
+                <div class="cal-meta-item"><span class="cal-label">Format:</span> <span class="cal-val">Micro-Thought Card</span></div>
+                <div class="cal-meta-item"><span class="cal-label">Platform:</span> <span class="cal-val">Instagram & LinkedIn</span></div>
+                <div class="cal-topic-box">
+                  <span class="topic-label">Focus:</span>
+                  <p>Thoughtful perspective setting up the week ahead.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Analytics Mindset -->
+        <div class="analytics-box">
+          <span class="section-kicker">Data Science Meets Storytelling</span>
+          <h3 class="analytics-title">Analytics Mindset: Create → Publish → Measure → Learn → Improve</h3>
+          <p class="analytics-sub">Understanding social media beyond aesthetics through key qualitative and quantitative metrics:</p>
+          
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-icon">🔖</div>
+              <h4 class="metric-title">Saves (High Utility)</h4>
+              <p class="metric-meaning">Shows that educational content was valuable enough for people to refer back to.</p>
+            </div>
+            <div class="metric-card">
+              <div class="metric-icon">↗️</div>
+              <h4 class="metric-title">Shares (Advocacy)</h4>
+              <p class="metric-meaning">Indicates the story resonated enough to be passed on to friends and communities.</p>
+            </div>
+            <div class="metric-card">
+              <div class="metric-icon">💬</div>
+              <h4 class="metric-title">Comments (Dialogue)</h4>
+              <p class="metric-meaning">Measures true community engagement, feedback, and thoughtful conversations.</p>
+            </div>
+            <div class="metric-card">
+              <div class="metric-icon">📊</div>
+              <h4 class="metric-title">Reach & Non-Followers</h4>
+              <p class="metric-meaning">Evaluates how effectively the topic and visual hook expanded beyond our current circle.</p>
+            </div>
+            <div class="metric-card">
+              <div class="metric-icon">⏱️</div>
+              <h4 class="metric-title">Carousel Completion Rate</h4>
+              <p class="metric-meaning">Tracks retention across slides to understand where audience attention holds or drops.</p>
+            </div>
+            <div class="metric-card">
+              <div class="metric-icon">🌱</div>
+              <h4 class="metric-title">Community Quality</h4>
+              <p class="metric-meaning">Focusing on attracting genuine participants and collaborators rather than empty vanity numbers.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: ABOUT ME
+         ========================================================================== -->
+    <section class="page-section" id="section-about">
+      <div class="container">
+        
+        <div class="about-grid">
+          
+          <!-- Left Visual & Snapshot -->
+          <div class="about-visual-col">
+            <div class="about-image-card">
+              <!-- Asset Slot: assets/khushi_profile.jpg -->
+              <img src="assets/khushi_profile.jpg" alt="Khushi Verma — B.Tech Data Science student and creative storyteller" class="about-portrait-img" />
+              <div class="about-image-tag">
+                <span class="about-dot"></span>
+                <span>Khushi Verma</span>
+              </div>
+            </div>
+
+            <!-- Interdisciplinary Venn Pill -->
+            <div class="about-interdisciplinary-card">
+              <span class="card-kicker">MY UNIQUE INTERSECTION</span>
+              <div class="venn-column">
+                <span class="venn-pill">💻 B.Tech Data Science (CS)</span>
+                <span class="venn-pill">📈 Finance Minor</span>
+                <span class="venn-pill">🎨 Visual Design & Canva</span>
+                <span class="venn-pill">🌱 Social Impact & Storytelling</span>
+                <span class="venn-pill highlight-pill">🤝 Working with People Personally</span>
+              </div>
+            </div>
+
+            <!-- French Introduction Feature Card -->
+            <div class="french-intro-card">
+              <div class="french-intro-header">
+                <span class="french-flag">🇫🇷</span>
+                <div class="french-intro-text">
+                  <span class="french-label">CREATIVE PRESENTATION</span>
+                  <h4 class="french-title">Introduction en Français</h4>
+                  <p class="french-sub">My video & presentation introduction in French, designed on Canva.</p>
+                </div>
+              </div>
+              <a href="https://canva.link/us5v3g5jomnxk6k" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary french-btn">
+                <span>Watch French Intro (Canva)</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+
+            <!-- Personal Quick Facts -->
+            <div class="quick-facts-card">
+              <h4 class="facts-title">Personal Snapshot</h4>
+              <ul class="facts-list">
+                <li><strong>University:</strong> Vidyashilp University, Bangalore</li>
+                <li><strong>Current Year:</strong> 4th Year B.Tech (Hons)</li>
+                <li><strong>Hometown:</strong> Shimla, Himachal Pradesh</li>
+                <li><strong>Interests:</strong> Creative Storytelling, Video Editing, Event Organisation, Community Engagement</li>
+                <li><strong>French Intro:</strong> <a href="https://canva.link/us5v3g5jomnxk6k" target="_blank" rel="noopener noreferrer" style="color: var(--color-forest); font-weight: 700; text-decoration: underline;">Watch on Canva ↗</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Narrative -->
+          <div class="about-narrative-col">
+            <span class="section-kicker">Personal Story</span>
+            <h2 class="about-headline">“I’m someone who likes learning across boundaries.”</h2>
+            
+            <div class="about-body-text">
+              <p>
+                My name is <strong>Khushi Verma</strong>. I am a 4th-year B.Tech (Hons) Computer Science student specializing in <strong>Data Science</strong> with a minor in <strong>Finance</strong> at <strong>Vidyashilp University, Bangalore</strong>. Originally, I am from <strong>Shimla, Himachal Pradesh</strong>.
+              </p>
+              <p>
+                Although my academic background is technical and data-focused, I have always found immense joy in <strong>creative communication, visual storytelling, event organising, and working directly with people personally</strong>.
+              </p>
+              <p>
+                From facilitating educational and video activities at <strong>Paryatan Foundation</strong>, to organising the <strong>SAHAYOG event</strong> and coordinating the overnight <strong>Smart India Hackathon (SIH)</strong> on campus, I’ve experienced how thoughtful design and human connection bring ideas to life.
+              </p>
+              <p>
+                I am exploring social media and digital content with intention—learning how strong visual hierarchy, scannable graphics, and empathetic narratives can mobilise communities and make meaningful impact visible.
+              </p>
+            </div>
+
+            <!-- Core Strengths -->
+            <div class="about-core-strengths">
+              <h4 class="strengths-title">What I bring:</h4>
+              <div class="strengths-grid">
+                <div class="strength-item">
+                  <span class="s-icon">✦</span>
+                  <div class="s-text">
+                    <strong>People-First Storytelling:</strong> I love working with people personally and listening to real stories from the ground.
+                  </div>
+                </div>
+                <div class="strength-item">
+                  <span class="s-icon">✦</span>
+                  <div class="s-text">
+                    <strong>Canva & Design Craft:</strong> Designing scannable posters, carousels, and digital event flyers.
+                  </div>
+                </div>
+                <div class="strength-item">
+                  <span class="s-icon">✦</span>
+                  <div class="s-text">
+                    <strong>Event & Team Execution:</strong> Proven experience coordinating events like SAHAYOG and overnight hackathons.
+                  </div>
+                </div>
+                <div class="strength-item">
+                  <span class="s-icon">✦</span>
+                  <div class="s-text">
+                    <strong>Analytical Rigor:</strong> Combining Data Science structure with creative intuition.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-closing-statement">
+              <p>
+                <strong>“I want to bring all these different sides of myself together—creating work that makes impact easy to see, understand, and remember.”</strong>
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: CONTACT & CONNECT
+         ========================================================================== -->
+    <section class="page-section" id="section-contact">
+      <div class="container text-center">
+        
+        <div class="closing-box">
+          <span class="closing-badge">GET IN TOUCH</span>
+          
+          <h2 class="closing-headline">
+            Let’s create something <span class="highlight-serif">people remember.</span>
+          </h2>
+
+          <p class="closing-subtext">
+            “I’m excited to learn, experiment, contribute and grow—open to opportunities, collaborations, and conversations.”
+          </p>
+
+          <!-- Candidate Details Card -->
+          <div class="contact-info-grid">
+            
+            <a href="mailto:khushiverma0819@gmail.com" class="contact-card-item">
+              <div class="contact-icon">📧</div>
+              <div class="contact-detail">
+                <span class="c-label">Personal Email</span>
+                <span class="c-val">khushiverma0819@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="mailto:2023khushi.verma@vidyashilp.edu.in" class="contact-card-item">
+              <div class="contact-icon">🎓</div>
+              <div class="contact-detail">
+                <span class="c-label">University Email</span>
+                <span class="c-val">2023khushi.verma@vidyashilp.edu.in</span>
+              </div>
+            </a>
+
+            <a href="tel:+918219039639" class="contact-card-item">
+              <div class="contact-icon">📱</div>
+              <div class="contact-detail">
+                <span class="c-label">Phone / WhatsApp</span>
+                <span class="c-val">+91 8219039639</span>
+              </div>
+            </a>
+
+            <a href="https://instagram.com/khushiverma0819" target="_blank" rel="noopener noreferrer" class="contact-card-item">
+              <div class="contact-icon">📸</div>
+              <div class="contact-detail">
+                <span class="c-label">Instagram</span>
+                <span class="c-val">@khushiverma0819</span>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/khushi-verma-614821263/" target="_blank" rel="noopener noreferrer" class="contact-card-item">
+              <div class="contact-icon">💼</div>
+              <div class="contact-detail">
+                <span class="c-label">LinkedIn</span>
+                <span class="c-val">khushi-verma-614821263</span>
+              </div>
+            </a>
+
+            <a href="https://canva.link/us5v3g5jomnxk6k" target="_blank" rel="noopener noreferrer" class="contact-card-item french-contact-item">
+              <div class="contact-icon">🇫🇷</div>
+              <div class="contact-detail">
+                <span class="c-label">French Introduction</span>
+                <span class="c-val">Canva Video & Presentation ↗</span>
+              </div>
+            </a>
+
+            <div class="contact-card-item non-link">
+              <div class="contact-icon">📍</div>
+              <div class="contact-detail">
+                <span class="c-label">Location</span>
+                <span class="c-val">Bangalore (VU) | Shimla, HP</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Interactive Message Sender (Direct WhatsApp / Email Dispatch) -->
+          <div class="quick-contact-box">
+            <h4 class="quick-title">Leave a note or interview invitation</h4>
+            <p class="quick-desc">Type your note below and choose your preferred contact channel to send it directly to Khushi:</p>
+            
+            <form id="portfolio-contact-form" onsubmit="handleDirectMessage(event)">
+              <div class="form-row">
+                <input type="text" id="sender-name" class="form-input" placeholder="Your Name / Organisation" required />
+                <input type="text" id="sender-subject" class="form-input" placeholder="Subject / Opportunity (e.g. Design & Social Media)" required />
+              </div>
+              <textarea id="sender-message" class="form-textarea" placeholder="Hi Khushi, I reviewed your portfolio and would like to discuss..." rows="4" required></textarea>
+              
+              <div class="action-dispatch-row">
+                <button type="submit" class="btn btn-primary" id="btn-dispatch-whatsapp" onclick="setMessageChannel('whatsapp')">
+                  <span>Send via WhatsApp (+91 8219039639)</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </button>
+
+                <button type="submit" class="btn btn-outline" id="btn-dispatch-email" onclick="setMessageChannel('email')">
+                  <span>Send via Email</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </button>
+
+                <button type="button" class="btn btn-glass" onclick="copyEmailToClipboard()">
+                  <span id="email-btn-text">Copy Email</span>
+                </button>
+              </div>
+            </form>
+            
+            <div id="form-success-msg" class="form-success-msg hidden">
+              ✓ Message prepared and opened in your chosen app!
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">Khushi Verma</span>
+        <span class="footer-meta">4th Year B.Tech (Hons) Data Science • Vidyashilp University Bangalore • Shimla, HP</span>
+      </div>
+      <div class="footer-right">
+        <div class="footer-links-row">
+          <a href="mailto:khushiverma0819@gmail.com">khushiverma0819@gmail.com</a>
+          <span>•</span>
+          <a href="tel:+918219039639">+91 8219039639</a>
+          <span>•</span>
+          <a href="https://instagram.com/khushiverma0819" target="_blank" rel="noopener noreferrer">@khushiverma0819</a>
+          <span>•</span>
+          <a href="https://www.linkedin.com/in/khushi-verma-614821263/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast hidden">
+    <span id="toast-message">Notification</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
